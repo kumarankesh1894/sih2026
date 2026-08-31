@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sign Up | Bridge Up</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="auth-body">
+    <header class="navbar">
+      <a class="logo" href="index.html">
+        <span>BRIDGE</span> <strong>UP</strong>
+      </a>
+
+      <nav>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#opportunities">Opportunities</a>
+        <a href="index.html#about">About</a>
+      </nav>
+
+      <div class="nav-buttons">
+        <a class="login-btn" href="login.html">Login</a>
+      </div>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main class="auth-page">
+      <section class="auth-panel">
+        <div class="auth-info">
+          <p class="tagline">START TODAY</p>
+
+          <h1>Join <span>Bridge Up</span></h1>
+
+          <p>
+            Create one profile to discover skill assessments, internships,
+            placements, learning programs and industry projects.
+          </p>
+
+          <div class="auth-highlights">
+            <div>
+              <strong>Students</strong>
+              <small>Grow skills</small>
+            </div>
+
+            <div>
+              <strong>Academia</strong>
+              <small>Monitor progress</small>
+            </div>
+
+            <div>
+              <strong>Industry</strong>
+              <small>Find talent</small>
+            </div>
+          </div>
+        </div>
+
+        <form class="auth-card" onsubmit="handleSignup(event)">
+          <div>
+            <p class="section-label">SIGN UP</p>
+            <h2>Create your account</h2>
+          </div>
+
+          <label for="signup-name">Full Name</label>
+          <input
+            id="signup-name"
+            name="name"
+            type="text"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <label for="signup-email">Email Address</label>
+          <input
+            id="signup-email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="signup-role">I am a</label>
+          <select id="signup-role" name="role" required>
+            <option value="">Select your role</option>
+            <option value="student">Student</option>
+            <option value="academia">Academia</option>
+            <option value="industry">Industry</option>
+            <option value="institution">Institution</option>
+          </select>
+
+          <label for="signup-password">Password</label>
+          <input
+            id="signup-password"
+            name="password"
+            type="password"
+            placeholder="Create a password"
+            minlength="6"
+            required
+          />
+
+          <label class="check-label">
+            <input type="checkbox" required />
+            I agree to the Bridge Up terms
+          </label>
+
+          <button class="auth-submit" type="submit">Create Account</button>
+
+          <p class="auth-switch">
+            Already have an account?
+            <a href="login.html">Login</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

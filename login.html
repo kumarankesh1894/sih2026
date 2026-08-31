@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login | Bridge Up</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="auth-body">
+    <header class="navbar">
+      <a class="logo" href="index.html">
+        <span>BRIDGE</span> <strong>UP</strong>
+      </a>
+
+      <nav>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#opportunities">Opportunities</a>
+        <a href="index.html#about">About</a>
+      </nav>
+
+      <div class="nav-buttons">
+        <a class="signup-btn" href="signup.html">Sign Up</a>
+      </div>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main class="auth-page">
+      <section class="auth-panel">
+        <div class="auth-info">
+          <p class="tagline">WELCOME BACK</p>
+
+          <h1>Login to <span>Bridge Up</span></h1>
+
+          <p>
+            Continue your academia-industry journey and access internships,
+            learning programs, placements and collaboration opportunities.
+          </p>
+
+          <div class="auth-highlights">
+            <div>
+              <strong>Skills</strong>
+              <small>Track growth</small>
+            </div>
+
+            <div>
+              <strong>Jobs</strong>
+              <small>Find matches</small>
+            </div>
+
+            <div>
+              <strong>Network</strong>
+              <small>Build connections</small>
+            </div>
+          </div>
+        </div>
+
+        <form class="auth-card" onsubmit="handleLogin(event)">
+          <div>
+            <p class="section-label">LOGIN</p>
+            <h2>Access your account</h2>
+          </div>
+
+          <label for="login-email">Email Address</label>
+          <input
+            id="login-email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="login-password">Password</label>
+          <input
+            id="login-password"
+            name="password"
+            type="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <div class="form-row">
+            <label class="check-label">
+              <input type="checkbox" name="remember" />
+              Remember me
+            </label>
+
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button class="auth-submit" type="submit">Login</button>
+
+          <p class="auth-switch">
+            New to Bridge Up?
+            <a href="signup.html">Create an account</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

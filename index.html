@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bridge Up | Academia-Industry Collaboration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>BRIDGE</span> <strong>UP</strong>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#opportunities">Opportunities</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a class="login-btn" href="login.html">Login</a>
+            <a class="signup-btn" href="signup.html">Sign Up</a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">
+                CONNECT • LEARN • GROW
+            </p>
+
+            <h1>
+                BRIDGE <span>UP</span>
+            </h1>
+
+            <h2>
+                Connecting Academia With Industry
+            </h2>
+
+            <p class="hero-text">
+                Bridge Up is a centralized platform that connects
+                students, academicians, industries and institutions
+                for skill development, internships, placements and
+                meaningful collaboration.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="getStarted()">
+                    Get Started
+                </button>
+
+                <button class="secondary-btn" onclick="exploreOpportunities()">
+                    Explore Opportunities
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="floating-card card1">
+                🎓
+                <div>
+                    <b>Students</b>
+                    <small>Build Your Skills</small>
+                </div>
+            </div>
+
+            <div class="floating-card card2">
+                💼
+                <div>
+                    <b>Industry</b>
+                    <small>Find Talent</small>
+                </div>
+            </div>
+
+            <div class="floating-card card3">
+                🏫
+                <div>
+                    <b>Academia</b>
+                    <small>Collaborate</small>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section id="features" class="features-section">
+
+        <div class="section-heading">
+
+            <p>OUR PLATFORM</p>
+
+            <h2>
+                Everything You Need to
+                <span>Build Your Future</span>
+            </h2>
+
+            <p>
+                One platform for skills, internships, placements
+                and industry collaboration.
+            </p>
+
+        </div>
+
+
+        <div class="features-grid">
+
+            <div class="feature-card">
+                <div class="icon">📊</div>
+
+                <h3>Skill Assessment</h3>
+
+                <p>
+                    Evaluate technical and soft skills and
+                    identify your skill gaps.
+                </p>
+
+                <button onclick="openFeature('Skill Assessment')">
+                    Explore →
+                </button>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">🧠</div>
+
+                <h3>Skill Mapping</h3>
+
+                <p>
+                    Discover suitable career paths, industries
+                    and learning opportunities.
+                </p>
+
+                <button onclick="openFeature('Skill Mapping')">
+                    Explore →
+                </button>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">💼</div>
+
+                <h3>Internships</h3>
+
+                <p>
+                    Find internships and projects matching
+                    your skills and interests.
+                </p>
+
+                <button onclick="openFeature('Internships')">
+                    Explore →
+                </button>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">🚀</div>
+
+                <h3>Placements</h3>
+
+                <p>
+                    Discover relevant job opportunities and
+                    track your applications.
+                </p>
+
+                <button onclick="openFeature('Placements')">
+                    Explore →
+                </button>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">📚</div>
+
+                <h3>Learning Programs</h3>
+
+                <p>
+                    Access industry training, certifications,
+                    workshops and mentorship.
+                </p>
+
+                <button onclick="openFeature('Learning Programs')">
+                    Explore →
+                </button>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">🤝</div>
+
+                <h3>Industry Collaboration</h3>
+
+                <p>
+                    Connect with industries through projects,
+                    workshops and mentorship.
+                </p>
+
+                <button onclick="openFeature('Industry Collaboration')">
+                    Explore →
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- OPPORTUNITIES -->
+    <section id="opportunities" class="opportunities">
+
+        <div class="section-heading">
+
+            <p>OPPORTUNITIES</p>
+
+            <h2>
+                Find Your Next
+                <span>Opportunity</span>
+            </h2>
+
+        </div>
+
+
+        <div class="opportunity-container">
+
+            <div class="opportunity-card">
+
+                <span class="badge internship">
+                    INTERNSHIP
+                </span>
+
+                <h3>Software Development Intern</h3>
+
+                <p>Tech Innovation Company</p>
+
+                <div class="skills">
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>Git</span>
+                </div>
+
+                <button onclick="apply('Software Development Intern')">
+                    Apply Now
+                </button>
+
+            </div>
+
+
+            <div class="opportunity-card">
+
+                <span class="badge job">
+                    PLACEMENT
+                </span>
+
+                <h3>Data Analyst</h3>
+
+                <p>Industry Partner</p>
+
+                <div class="skills">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Excel</span>
+                </div>
+
+                <button onclick="apply('Data Analyst')">
+                    View Opportunity
+                </button>
+
+            </div>
+
+
+            <div class="opportunity-card">
+
+                <span class="badge training">
+                    TRAINING
+                </span>
+
+                <h3>AI & Data Science Program</h3>
+
+                <p>Industry Learning Hub</p>
+
+                <div class="skills">
+                    <span>AI</span>
+                    <span>Machine Learning</span>
+                </div>
+
+                <button onclick="apply('AI & Data Science Program')">
+                    Learn More
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <div>
+
+            <p class="section-label">
+                WHY BRIDGE UP?
+            </p>
+
+            <h2>
+                Bridging the Gap Between
+                <span>Education & Industry</span>
+            </h2>
+
+            <p>
+                Bridge Up helps students understand industry
+                requirements, develop relevant skills and discover
+                internships and placement opportunities.
+            </p>
+
+            <p>
+                At the same time, industries can discover skilled
+                candidates, while institutions can monitor skill
+                development and placement readiness.
+            </p>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div>
+                <h3>4+</h3>
+                <p>User Roles</p>
+            </div>
+
+            <div>
+                <h3>360°</h3>
+                <p>Career Support</p>
+            </div>
+
+            <div>
+                <h3>1</h3>
+                <p>Unified Platform</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>
+            Ready to Build Your Future?
+        </h2>
+
+        <p>
+            Start your journey with Bridge Up today.
+        </p>
+
+        <button onclick="getStarted()">
+            Join Bridge Up
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            BRIDGE <span>UP</span>
+        </div>
+
+        <p>
+            Connecting Academia • Industry • Students
+        </p>
+
+        <p>
+            © 2026 Bridge Up. SIH 2026 Project.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
